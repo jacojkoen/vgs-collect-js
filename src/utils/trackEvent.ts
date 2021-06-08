@@ -4,6 +4,7 @@ import {
   ANALYTICS_EVENTS,
   VGS_COLLECT_KEEPER,
 } from '../constants/index';
+import { IConfig } from '../interfaces/i-config-interface';
 import { setConfig, getConfig } from './config';
 import { validateConfig } from './validation';
 

@@ -1,4 +1,5 @@
 import { ERROR_MESSAGE } from '../constants';
+import { IConfigSchema } from '../interfaces/i-config-schema';
 
 const configSchema: IConfigSchema = {
   vaultId: value => typeof value === 'string' && /^tnt.{8}$/.test(value),

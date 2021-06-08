@@ -7,6 +7,14 @@ import { ERROR_MESSAGE, DEFAULT_CONFIG } from './constants';
 
 import { preFetch } from './sideEffects/preFetch';
 import { preConnect } from './sideEffects/preConnect';
+import { IConfig } from './interfaces/i-config-interface';
+import { IVGSCollectGlobal } from './interfaces/ivgs-collection-global-interface';
+
+declare global {
+  interface Window {
+    VGSCollect: IVGSCollectGlobal;
+  }
+}
 
 // side effects
 Promise.resolve().then(() => {
